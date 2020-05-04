@@ -20,7 +20,7 @@ const Instructions = () => {
         <Card className={classes.root} raised={true}>
           <CardContent>
             <Typography gutterBottom={true}>
-              Make the appropriate updates necessary to place focus in the last name field when the "Set Focus" button is clicked.
+              Make the necessary updates in App.js and LastNameField.js to place focus in the last name field when the "Set Focus" button is clicked.
             </Typography> 
             <Typography>
               Note: the Material-UI TextField component accepts an "inputRef"

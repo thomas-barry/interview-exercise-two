@@ -4,13 +4,21 @@ import Box from "@material-ui/core/Box";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+import "./styles.css";
+
 const Instructions = () => (
-  <Box pb={2}>
-    <Card>
+  <Box py={2}>
+    <Card className="instructions" raised={true}>
       <CardContent>
         <Typography align="left">
-          Make the appropriate updates necessary to place focus in the last name
-          field when the "Set Focus" button is clicked.
+          <p>
+            Make the appropriate updates necessary to place focus in the last
+            name field when the "Set Focus" button is clicked.
+          </p>
+          <p>
+            Note: the Material-UI TextField component accepts an "inputRef"
+            property.
+          </p>
         </Typography>
       </CardContent>
     </Card>

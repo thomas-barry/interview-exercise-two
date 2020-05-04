@@ -11,7 +11,7 @@ import "./styles.css";
 export default function App() {
   return (
     <MuiThemeProvider>
-      <div className="App">
+      <div className="app">
         <Instructions />
         <form noValidate autoComplete="off">
           <LastNameField />

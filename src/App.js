@@ -13,13 +13,15 @@ export default function App() {
     <MuiThemeProvider>
       <div className="app">
         <Instructions />
-        <form noValidate autoComplete="off">
-          <LastNameField />
-        </form>
-        <Box pt={2}>
-          <Button variant="contained" color="primary">
-            Set Focus
-          </Button>
+        <Box px={2}>
+          <form noValidate autoComplete="off">
+            <LastNameField />
+          </form>
+          <Box pt={3}>
+            <Button variant="contained" color="primary">
+              Set Focus
+            </Button>
+          </Box>
         </Box>
       </div>
     </MuiThemeProvider>

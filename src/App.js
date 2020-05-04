@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import { TextField } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import Box from "@material-ui/core/Box";
 
-import FormContext from "./FormContext";
-import SupportingText from "./SupportingText";
 import Instructions from "./Instructions";
+import LastNameField from "./LastNameField";
 
 import "./styles.css";
 
 export default function App() {
-  const [hasFocus, setHasFocus] = useState();
   return (
     <MuiThemeProvider>
       <div className="App">
         <Instructions />
         <form noValidate autoComplete="off">
-          <FormContext.Provider value={{ hasFocus, setHasFocus }}>
-            <TextField
-              id="standard-basic"
-              label="Last name"
-              fullWidth={true}
-              onFocus={() => setHasFocus(true)}
-              onBlur={() => setHasFocus(false)}
-            />
-            <SupportingText>We keep this information private</SupportingText>
-          </FormContext.Provider>
+          <LastNameField />
         </form>
+        <Box pt={2}>
+          <Button variant="contained" color="primary">
+            Set Focus
+          </Button>
+        </Box>
       </div>
     </MuiThemeProvider>
   );

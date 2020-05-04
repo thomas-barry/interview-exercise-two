@@ -9,21 +9,8 @@ const Instructions = () => (
     <Card>
       <CardContent>
         <Typography align="left">
-          <p>
-            In this example, the SupportingText component renders its children
-            when the input field has focus.
-          </p>
-          <h4>Part One</h4>
-          <p>
-            Update the SupportingText component so its content becomes visible
-            when the input field receives focus, and remains visible after the
-            input field loses focus.
-          </p>
-          <h4>Part Two</h4>
-          <p>
-            Update the SupportingText component so that its content fades into
-            view.
-          </p>
+          Make the appropriate updates necessary to place focus in the last name
+          field when the "Set Focus" button is clicked.
         </Typography>
       </CardContent>
     </Card>
